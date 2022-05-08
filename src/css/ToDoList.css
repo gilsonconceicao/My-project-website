@@ -10,8 +10,7 @@
 
 main {
     height: 100vh;
-    padding: 20px 50px;
-    overflow-y: hidden;
+    padding: 10px;
 }
 
 #conteinerApp {
@@ -26,7 +25,7 @@ main {
     border-radius: 5px;
     font-size: 20px;
     list-style-type: none;
-    max-width: 300px;
+    max-width: 900px;
     line-height: 2em;
     padding: 10px;
 }
@@ -43,6 +42,7 @@ main {
 
 .listMenuToDoList li:hover {
     background-color: #444444;
+    color:orangered;
     border-radius: 5px;
 }
 
@@ -61,7 +61,7 @@ main {
 }
 
 #textListAdd, #titleOfList {
-    width: 70%;
+    width: 90%;
     font-size: 20px;
     background: white;
     color: black;
@@ -69,7 +69,7 @@ main {
     box-shadow: 0px 0px 10px #00000052;
     outline: none;
     border-radius: 5px;
-    margin: 3px 0 ;
+    margin: 3px 0;
     padding: 10px;
 }
 
@@ -158,9 +158,4 @@ main {
     color: #bd0000a2;
 }
 
-@media screen and (max-width: 500px) {
-    main {
-        margin: 0;
-        padding: 10px;
-    }
-}
+
