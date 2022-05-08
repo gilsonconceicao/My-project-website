@@ -39,6 +39,7 @@ main {
 
 .welcomeWebSite p {
     font-size: 20px;
+    margin: 0 5px;
     line-height: 1.5em;
 }
 

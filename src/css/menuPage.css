@@ -71,8 +71,8 @@
     border-bottom: 2px solid #f2310573;
 }
 
-.contextMenu {
-    display: none;
+.contextMenu li {
+    margin: 20px 0 ;
 }
 
 #buttonMenu {
