@@ -82,8 +82,6 @@ document.getElementById('form_ToDoList')
                 .addEventListener ('click', () => {
             document.getElementById('answer_area').style.display = 'flex';
             })
-
-
             const list = new ToDoList(title, text)
             const addItens = new AddToList();
             addItens.resetForm()

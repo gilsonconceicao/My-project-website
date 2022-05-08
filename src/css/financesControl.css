@@ -1,0 +1,94 @@
+main {
+    height: 100vh;
+    padding: 10px 30px;
+}
+
+.textWelcome h2 {
+    color: #025059;
+    font-size: 2.5em;
+    letter-spacing: 2px ;
+    padding: 20px 10px;
+}
+
+#iconControlFinances {
+    font-size: 70px;
+    padding: 10px ;
+}
+
+/* ---- current money (saldo) ------ */
+
+.conteinerCurrent {
+    display: flex;
+    max-width: 700px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.form_money_Current {
+    margin: 0 10px;
+}
+
+label {
+    font-size: 24px;
+}
+
+input {
+    color: #025059;
+    background: none;
+    border: none;
+    outline: none;
+    width: 80% ;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.692);
+    padding: 2px;
+    font-size: 20px;
+}
+
+.checkedButton {
+    display: block;
+    cursor: pointer;
+    background: none;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 20px 0 ;
+    transition: all .4s;
+}
+
+.checkedButton:hover {
+    color: white;
+    background-color: #272525;
+}
+
+#nameProduct {
+    margin-bottom: 20px;
+}
+
+#form_finacial {
+    margin: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    main {
+        padding: 20px 10px;
+        margin: 0;
+    }
+
+    .textWelcome h2 {
+        font-size: 2em;
+    }
+
+    .form_money_Current {
+        display: block;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    #iconControlFinances {
+        font-size: 40px;
+    }
+}

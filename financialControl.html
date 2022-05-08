@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App</title>
+    <title>App | Controle financeiro</title>
     <link rel="stylesheet" href="src/css/menuPage.css">
     <link rel="stylesheet" href="src/css/App.css">
+    <link rel="stylesheet" href="src/css/financesControl.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
     <div class="conteinerApp" >
-        
         <aside class="menuWebSite">
             <div class="contextMenu">
                 <span class="homeBtn"><a href="index.html"><i class="fa-solid fa-house"></i></a></span>
@@ -29,26 +29,32 @@
                 </div>
             </div>
         </aside>
+
         <main>
-            <article class="welcomeWebSite">
-                <div class="textArticle">
-                    <h2>Welcome to my projects</h2>
-                    <br>
-                    <p>Conheça um pouco dos <span class="destText">meus projetos</span> atuais onde trabalho em prática de criação de páginas <span class="destText">web dinâmicas</span> com interações, colocações de texto e estilos. Abaixo minhas habilidades como <span class="destText">programador web</span>.</p>
-                </div>
-                <img src="src/img/codeLanguages.png" alt="codeLanguages.png">
+            <article class="textWelcome">
+                <h2>Controle financeiro</h2>
             </article>
-            <section class="myOptions">
-                <ul class="listOfSkills">
-                    <li><i class="fa-solid fa-desktop"></i>Web Developer</li>
-                    <li> <i class="fa-solid fa-gear"></i>Ajustes de códigos</li>
-                    <li><i class="fa-solid fa-code"></i>Programador front-end</li>
-                    <!-- languages -->
-                    <li><i class="fa-brands fa-css3-alt"></i>HTML</li>
-                    <li><i class="fa-brands fa-html5"></i>CSS</li>
-                    <li><i class="fa-brands fa-js"></i>Javascript</li>
-                    <li onclick="teste()"><i class="fa-brands fa-github"></i> GitHub</li>
-                </ul>  
+            <section >
+                <div class="conteinerCurrent">
+                    <i id="iconControlFinances" class="fa-solid fa-coins"></i>
+                    <div class="form_money_Current">
+                        <label for="current">Saldo atual: </label> <br>
+                        <input type="number" autocomplete="off" name="moneyCurrent" id="currentMoney">
+
+                        <button class="checkedButton">REALIZAR SIMULAÇÃO</button>
+                    </div>
+                </div>
+                
+                <form id="form_finacial">
+                    <label for="product">Nome do produto: </label>
+                    <br> 
+                    <input type="text" autocomplete="off" id="nameProduct"> <br> 
+                    <label for="product">Preço do produto: </label>
+                    <br>
+                    <input type="text" autocomplete="off" id="priceProduct">
+
+                    <button class="checkedButton">REALIZAR COMPRA</button>
+                </form>
             </section>
         </main>
     </div>

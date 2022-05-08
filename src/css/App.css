@@ -16,10 +16,6 @@ main {
     padding: 0 30px; /* ----------- caso de problemas na responsividade */
 }
 
-#conteinerApp {
-    display: grid;
-    grid-template-columns: 60px auto ;
-}
 
 .welcomeWebSite {
     display: flex;

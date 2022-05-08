@@ -1,11 +1,20 @@
 .menuWebSite {
     background-color: #025059;
     color: black;
+    display: block;
     z-index: 10;
     width: 40px;
     height: 100vh;
-    padding: 10px;
+    padding: 10px 5px;
+    transition: all .6s;
 }
+
+.conteinerApp {
+    display: grid;
+    grid-template-columns: 40px auto; 
+}
+
+
 
 .menuWebSite h2 {
     font-size: 2em;
@@ -22,16 +31,17 @@
 .itensMenuLeft li {
     font-size: 20px;
     background-color: rgba(204, 204, 204, 0.062);
-    border-radius: 7px;
+    display: block;
     margin: 10px 0 ;
 }
 
 .itensMenuLeft a {
     color: rgba(255, 255, 255, 0.808);
     display: block;
+    text-align: center;
     border-radius: 7px;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 4px ;
     transition: all .3s;
 }
 
@@ -42,10 +52,12 @@
 
 
 .listItens {
+    font-size: 10px;
     color: white;
     text-align: center;
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 5px;
 }
 .listItens i {
     margin: 0 3px;
@@ -91,16 +103,18 @@
 
 
 
+@media screen and (max-width: 580px) {
 
-@media screen and (max-width: 450px) {
     .menuWebSite {
-        width: 40px;
-    }
-    .itensMenuLeft li {
-        font-size: 18px;
+        width: 30px;
     }
 
-    #conteinerApp {
-        display: block;
+    .conteinerApp {
+        display: grid;
+        grid-template-columns: 30px auto; 
+    }
+
+    .itensMenuLeft li {
+        font-size: 15px;
     }
 }

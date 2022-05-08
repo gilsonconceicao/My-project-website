@@ -1,0 +1,94 @@
+.textWelcome h2 {
+    color: #025059;
+    text-align: center;
+    font-size: 2.6em;
+    padding: 20px 10px;
+}
+
+main {
+    height: 100vh;
+}
+
+#form_user {
+    margin: 10px;
+}
+
+#iconAddUser {
+    font-size: 40px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+#form_user input {
+    color: #030303;
+    background: none;
+    outline: none;
+    border: none;
+    width: 60%;
+    font-size: 20px;
+    border-bottom: 2px solid #0000009d;
+    margin: 4px 0 20px 0;
+    padding: 3px;
+    transition: all .5s;
+}
+
+#form_user input:focus {
+    filter: drop-shadow(0 0 0.2em rgba(0, 82, 129, 0.562));
+    width: 70%;
+}
+
+
+#form_user label {
+    color: #212222;
+    font-size: 25px;
+}
+
+
+
+#submitDice {
+    cursor: pointer;
+    width: 200px;
+    padding: 4px;
+    border: 2px solid rgba(0, 0, 0, 0.692);
+    transition: all .6s;
+}
+
+#submitDice:hover {
+    color: white;
+    background-color: #212222;
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    #form_user input:focus {
+        width: 90%;
+    }
+
+    .textWelcome h2 {
+        font-size: 1.7em;
+    }
+
+    #form_user {
+        padding: 10px;
+    }
+
+    #form_user input {
+        width: 90%;
+    }
+
+    #form_user label {
+        font-size: 20px;
+    }
+
+    #submitDice {
+        cursor: pointer;
+        width: 100%;
+        padding: 4px;
+        border: 2px solid rgba(0, 0, 0, 0.692);
+        transition: all .6s;
+    }
+    
+}

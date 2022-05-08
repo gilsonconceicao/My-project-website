@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App</title>
+    <title>App | Formuário</title>
     <link rel="stylesheet" href="src/css/menuPage.css">
     <link rel="stylesheet" href="src/css/App.css">
+    <link rel="stylesheet" href="src/css/formPage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
@@ -30,25 +31,26 @@
             </div>
         </aside>
         <main>
-            <article class="welcomeWebSite">
-                <div class="textArticle">
-                    <h2>Welcome to my projects</h2>
-                    <br>
-                    <p>Conheça um pouco dos <span class="destText">meus projetos</span> atuais onde trabalho em prática de criação de páginas <span class="destText">web dinâmicas</span> com interações, colocações de texto e estilos. Abaixo minhas habilidades como <span class="destText">programador web</span>.</p>
-                </div>
-                <img src="src/img/codeLanguages.png" alt="codeLanguages.png">
+            <article class="textWelcome">
+                <h2>Preenchimento de formulário</h2>
             </article>
-            <section class="myOptions">
-                <ul class="listOfSkills">
-                    <li><i class="fa-solid fa-desktop"></i>Web Developer</li>
-                    <li> <i class="fa-solid fa-gear"></i>Ajustes de códigos</li>
-                    <li><i class="fa-solid fa-code"></i>Programador front-end</li>
-                    <!-- languages -->
-                    <li><i class="fa-brands fa-css3-alt"></i>HTML</li>
-                    <li><i class="fa-brands fa-html5"></i>CSS</li>
-                    <li><i class="fa-brands fa-js"></i>Javascript</li>
-                    <li onclick="teste()"><i class="fa-brands fa-github"></i> GitHub</li>
-                </ul>  
+            <section>
+                <i id="iconAddUser" class="fa-solid fa-user-plus"></i>
+                <form id="form_user" action="#">
+                    <label for="firstName">Nome</label>
+                    <br>
+                    <input type="text" name="firstName" autocomplete="off" id="nameUser"> <br>
+
+                    <label for="lastName">Sobrenome</label>
+                    <br>
+                    <input type="text" name="lastName" autocomplete="off" id="lastName"> <br>
+
+                    <label for="e-mail">Email</label>
+                    <br>
+                    <input type="email" name="e-mail" autocomplete="off" id="emailUser"> <br> 
+
+                    <button id="submitDice">ENVIAR</button>
+                </form>
             </section>
         </main>
     </div>
