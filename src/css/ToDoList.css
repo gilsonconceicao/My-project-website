@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+main {
+    height: 100vh;
+    padding: 20px 50px;
+    overflow-y: hidden;
+}
+
+#conteinerApp {
+    display: grid;
+    grid-template-columns: 60px auto ;
+}
+
+
+.listMenuToDoList {
+    background-color: #242424;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 20px;
+    list-style-type: none;
+    max-width: 300px;
+    line-height: 2em;
+    padding: 10px;
+}
+
+.listMenuToDoList i {
+    margin: 0 10px;
+}
+
+.listMenuToDoList li {
+    
+    cursor: pointer;
+    margin: 3px;
+}
+
+.listMenuToDoList li:hover {
+    background-color: #444444;
+    border-radius: 5px;
+}
+
+#iconList {
+    display: block;
+    font-size: 30px;
+    margin: 10px 5px 30px 5px;
+}
+
+/* estilo do formulário */
+
+#form_ToDoList {
+    display: none;
+    max-width: 1100px;
+    margin: 20px 0 ;
+}
+
+#textListAdd, #titleOfList {
+    width: 70%;
+    font-size: 20px;
+    background: white;
+    color: black;
+    border: 1px solid #00000085;
+    box-shadow: 0px 0px 10px #00000052;
+    outline: none;
+    border-radius: 5px;
+    margin: 3px 0 ;
+    padding: 10px;
+}
+
+#form_ToDoList input::placeholder {
+    font-size: 18px;
+}
+
+/*button*/
+
+#addTodoList {
+    background-color: #025159;
+    color: white;
+    cursor: pointer;
+    border: none;
+    display: block;
+    font-size: 20px;
+    margin: 4px;
+    width: 200px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Create conteiner list  */
+
+#answer_area {
+    display: none;
+    background-color: #e7e7e7;
+    height: 250px;
+    overflow: scroll;
+    flex-direction: column-reverse;
+    padding: 10px;
+    margin: 20px 0 ;
+}
+
+#answer_area::-webkit-scrollbar {
+    background-color:  #ffffff60;
+}
+
+#answer_area::-webkit-scrollbar-thumb {
+    background-color:  #0250597a;
+}
+
+.crateItensList {
+    margin: 10px 0;
+}
+
+.dateComplete {
+    background-color: #242424;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px 6px 0 0 ;
+    display: flex;  
+    justify-content: space-between;
+    padding: 5px 10px;   
+}
+
+.textAdd {
+    background-color: #025159;
+    color: rgb(252, 252, 252);
+    border-radius: 0 0 6px 6px;
+    padding: 10px;
+}
+
+.textAdd h2 {
+    font-size: 2em;
+}
+
+.textAdd p {
+    font-size: 20px;
+}
+
+#removeList {
+    cursor: pointer;
+    background: none;
+    color: red;
+    padding: 3px;
+    font-size: 20px;
+    border: none;
+}
+
+#removeList I {
+    margin: 10px 4px;
+}
+
+#removeList:hover {
+    color: #bd0000a2;
+}
+

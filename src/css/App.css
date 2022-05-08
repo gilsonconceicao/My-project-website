@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* - main -- Conteiner App --- */
+
+main {
+    background-color: #ececec;
+    height: 100%;
+    padding: 0 30px; /* ----------- caso de problemas na responsividade */
+}
+
+#conteinerApp {
+    display: grid;
+    grid-template-columns: 60px auto ;
+}
+
+.welcomeWebSite {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    max-width: 800px;
+    margin: 4% auto 2% auto;
+}
+
+.welcomeWebSite h2 {
+    color: #F23005;
+    font-size: 3.6em;
+    font-style: italic;
+    letter-spacing: 2px;
+    filter: drop-shadow(0 0 0.2em #0000002d );
+}
+
+.welcomeWebSite p {
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.textArticle {
+    margin-left: 20px;
+}
+
+.destText {
+    background-image: linear-gradient(to right, #ececec, #02505944);
+    padding: 0 3px; 
+}
+
+.homeBtn {
+    margin: auto;
+    display: block;
+    width: 30px;
+}
+
+/* my skills of page */
+
+.listOfSkills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+    list-style-type: none;
+    padding-bottom: 40px;
+}
+
+.listOfSkills li {
+    background-color: rgb(248, 248, 248);
+    box-shadow: 0px 0px 10px #0000002f;
+    border-radius: 7px;
+    display: block;
+    max-width: 400px;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    font-size: 23px;
+    transition: all .4s;
+}
+
+.listOfSkills li:hover {
+    transform: translate(0.5em, -0.4em);
+}
+
+.listOfSkills i {
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+
+.contextMenu {
+    display: block;
+}
+
+#buttonMenu {
+    display: none;
+}
+
+
+@media screen and (max-width: 1060px) {
+    .menuWebSite {
+        height: 100%;
+    }
+
+    .welcomeWebSite {
+        display: block;
+    }
+
+    .welcomeWebSite img {
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    main {
+        padding: 0;
+        margin: 0;
+    }
+
+    .welcomeWebSite h2 {
+        font-size: 2.3em;
+    }
+
+    .welcomeWebSite p {
+        font-size: 18px;
+    }
+}
