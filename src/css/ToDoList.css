@@ -158,3 +158,9 @@ main {
     color: #bd0000a2;
 }
 
+@media screen and (max-width: 500px) {
+    main {
+        margin: 0;
+        padding: 10px;
+    }
+}

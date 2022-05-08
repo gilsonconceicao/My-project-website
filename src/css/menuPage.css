@@ -93,11 +93,11 @@
 
 
 @media screen and (max-width: 450px) {
-
-
-
-    #buttonMenu {
-        font-size: 23px;
+    .menuWebSite {
+        width: 40px;
+    }
+    .itensMenuLeft li {
+        font-size: 18px;
     }
 
     #conteinerApp {
