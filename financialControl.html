@@ -34,29 +34,33 @@
             <article class="textWelcome">
                 <h2>Controle financeiro</h2>
             </article>
+
             <section >
-                <div class="conteinerCurrent">
-                    <i id="iconControlFinances" class="fa-solid fa-coins"></i>
-                    <div class="form_money_Current">
-                        <label for="current">Saldo atual: </label> <br>
-                        <input type="number" autocomplete="off" name="moneyCurrent" id="currentMoney">
-
-                        <button class="checkedButton">REALIZAR SIMULAÇÃO</button>
-                    </div>
-                </div>
-                
                 <form id="form_finacial">
-                    <label for="product">Nome do produto: </label>
-                    <br> 
-                    <input type="text" autocomplete="off" id="nameProduct"> <br> 
-                    <label for="product">Preço do produto: </label>
-                    <br>
-                    <input type="text" autocomplete="off" id="priceProduct">
-
-                    <button class="checkedButton">REALIZAR COMPRA</button>
+                    
+                    <div class="conteinerCurrent">
+                        <i id="iconControlFinances" class="fa-solid fa-coins"></i>
+                        <div class="form_money_Current">
+                            <label for="current">Saldo atual: </label> <br>
+                            <input type="number"  autocomplete="off" name="moneyCurrent" id="currentMoney"> 
+                        </div>
+                    </div>
+                
+                    <div class="form_action">
+                        <label for="product">Nome do produto: </label>
+                        <br>
+                        <input type="text" autocomplete="off" id="nameProduct"> <br>
+                        <label for="product">Preço do produto: </label>
+                        <br>
+                        <input type="text" autocomplete="off" id="priceProduct">
+                    </div>
+                    <button id="checkedValue" class="checkedButton">REALIZAR SIMULAÇÃO</button>
                 </form>
+
+                <div id="conteinerAnswer"></div>
             </section>
         </main>
     </div>
 </body>
+<script src="src/js/financialControl.js"></script>
 </html>

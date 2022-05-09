@@ -11,7 +11,7 @@ main {
 }
 
 #iconControlFinances {
-    font-size: 70px;
+    font-size: 90px;
     padding: 10px ;
 }
 
@@ -29,7 +29,7 @@ main {
 }
 
 label {
-    font-size: 24px;
+    font-size: 29px;
 }
 
 input {
@@ -37,7 +37,7 @@ input {
     background: none;
     border: none;
     outline: none;
-    width: 80% ;
+    width: 90% ;
     border-bottom: 1px solid rgba(0, 0, 0, 0.692);
     padding: 2px;
     font-size: 20px;
@@ -62,8 +62,21 @@ input {
     margin-bottom: 20px;
 }
 
-#form_finacial {
+.form_action {
+    display: block;
     margin: 10px;
+}
+
+/* class and id of javascript */
+
+.currentAdd {
+    font-size: 3em;
+    margin: 0 10px;   
+}
+
+.mensagem {
+    color: #025059;
+    font-size: 13px;
 }
 
 @media screen and (max-width: 500px) {
