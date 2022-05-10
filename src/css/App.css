@@ -13,7 +13,7 @@
 main {
     background-color: #ececec;
     height: 100%;
-    padding: 0 30px; /* ----------- caso de problemas na responsividade */
+    padding: 30px; /* ----------- caso de problemas na responsividade */
 }
 
 

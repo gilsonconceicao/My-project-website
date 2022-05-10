@@ -23,10 +23,7 @@
 
                     <li title="Simulação de formulário"><a href="formAddUser.html"><i class="fa-solid fa-user-check"></i></a></li>
                 </ul>
-                <div class="listItens">
-                    <i class="fa-solid fa-layer-group"></i>
-                    <i class="fa-solid fa-code"></i>
-                </div>
+                
             </div>
         </aside>
 
@@ -42,6 +39,7 @@
                         <i id="iconControlFinances" class="fa-solid fa-coins"></i>
                         <div class="form_money_Current">
                             <label for="current">Saldo atual: </label> <br>
+                            <span>R$</span>
                             <input type="number"  autocomplete="off" name="moneyCurrent" id="currentMoney"> 
                         </div>
                     </div>
@@ -52,12 +50,16 @@
                         <input type="text" autocomplete="off" id="nameProduct"> <br>
                         <label for="product">Preço do produto: </label>
                         <br>
-                        <input type="text" autocomplete="off" id="priceProduct">
+                        <input type="number" autocomplete="off" id="priceProduct">
                     </div>
                     <button id="checkedValue" class="checkedButton">REALIZAR SIMULAÇÃO</button>
                 </form>
 
-                <div id="conteinerAnswer"></div>
+                <button id="addMoreProduct" class="checkedButton">+</button>
+
+                <div id="conteinerAnswer">
+                    <div id="addConteinerJs"></div>
+                </div>
             </section>
         </main>
     </div>

@@ -5,6 +5,7 @@ main {
 
 .textWelcome h2 {
     color: #025059;
+    text-align: center;
     font-size: 2.5em;
     letter-spacing: 2px ;
     padding: 20px 10px;
@@ -49,13 +50,17 @@ input {
     background: none;
     border: 1px solid black;
     padding: 5px;
-    margin: 20px 0 ;
+    margin: 20px 10px ;
     transition: all .4s;
 }
 
 .checkedButton:hover {
     color: white;
     background-color: #272525;
+}
+
+#addMoreProduct { /* button add more */
+    display: none;
 }
 
 #nameProduct {
@@ -69,6 +74,11 @@ input {
 
 /* class and id of javascript */
 
+#conteinerAnswer {
+    height: 240px;
+    overflow: scroll;
+}
+
 .currentAdd {
     font-size: 3em;
     margin: 0 10px;   
@@ -77,6 +87,53 @@ input {
 .mensagem {
     color: #025059;
     font-size: 13px;
+}
+
+.box_div_js {
+    border: 2px solid black;
+    max-width: 800px;
+    padding: 20px;
+    margin: 10px 2px;
+    border-radius: 5px;
+}
+
+.conteinerAnswerJs {
+    background-color: #f7f7f7;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.conteinerAnswerJs h2 {
+    color: rgb(31, 31, 31);
+    font-size: 2em;
+}
+
+.conteinerAnswerJs p {
+    color: #fc0000;
+    font-size: 18px;
+}
+
+.valueCurrent {
+    filter: drop-shadow(0 0 0.2em rgba(0, 0, 0, 0.185));
+    color: #02aa4d;
+    font-size: 18px;
+}
+
+.remaining {
+    font-size: 18px;
+}
+
+.flexTitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dateJs {
+    background-color: #2725250a;
+    color: rgba(49, 49, 49, 0.836);
+    padding: 4px;
 }
 
 @media screen and (max-width: 500px) {
@@ -103,5 +160,45 @@ input {
 
     #iconControlFinances {
         font-size: 40px;
+    }
+
+    /* info add js */ 
+    
+    .currentAdd {
+        font-size: 2em;
+        margin: 0 10px;   
+    }
+    
+    
+    .box_div_js {
+        padding: 10px;
+    }
+    
+    .conteinerAnswerJs {
+        background-color: #f7f7f7;
+        padding: 4px;
+        border-radius: 6px;
+    }
+    
+    .conteinerAnswerJs h2 {
+        color: rgb(31, 31, 31);
+        font-size: 1.5em;
+    }
+    
+    .conteinerAnswerJs p {
+        color: #fc0000;
+        font-size: 16px;
+    }
+    
+    .valueCurrent {
+        font-size: 16px;
+    }
+    
+    .remaining {
+        font-size: 16px;
+    }
+
+    .dateJs {
+        margin: 10px 0 ;
     }
 }
