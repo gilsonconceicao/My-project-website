@@ -9,10 +9,6 @@
     transition: all .6s;
 }
 
-.menuWebSite:hover {
-    width: 200px;
-}
-
 .conteinerApp {
     display: grid;
     grid-template-columns: 40px auto; 

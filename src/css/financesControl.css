@@ -90,6 +90,8 @@ input {
 }
 
 .box_div_js {
+    display: flex;
+    flex-direction: column-reverse;
     border: 2px solid black;
     max-width: 800px;
     padding: 20px;
@@ -134,6 +136,11 @@ input {
     background-color: #2725250a;
     color: rgba(49, 49, 49, 0.836);
     padding: 4px;
+}
+
+
+#removeItens {
+    display: none;
 }
 
 @media screen and (max-width: 500px) {

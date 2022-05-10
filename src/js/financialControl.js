@@ -41,6 +41,7 @@ CheckedValue.prototype.CheckingValueCurrent = function (valueAdd) {
 
         conteinerCreate.innerHTML = `
             <div class="box_div_js">
+            
                 <div class="conteinerAnswerJs">
                     <div class="flexTitle"> 
                         <h2>Nome da compra: ${valueAdd.nameProduct}</h2>
@@ -64,7 +65,10 @@ CheckedValue.prototype.CheckingValueCurrent = function (valueAdd) {
 
         // action buttons state
         document.getElementById('addMoreProduct').style.display = 'block'; 
-        document.getElementById('checkedValue').style.display = 'none'
+        document.getElementById('checkedValue').style.display = 'none'; 
+
+        document.getElementById('removeItens').style.display = 'block'; 
+
     }
 
     this.formatDefaultForm = function () {
@@ -78,10 +82,23 @@ CheckedValue.prototype.CheckingValueCurrent = function (valueAdd) {
 
         document.getElementsByClassName('form_money_Current')[0].style.display = 'block'
 
-        document.getElementById('checkedValue').style.display = 'block'
+        document.getElementById('checkedValue').style.display = 'block';
+
+        document.getElementById('removeItens').style.display = 'none'
 
         document.getElementById('addMoreProduct').style.display = 'none'; 
     })
+    }
+
+    this.removeItem = function () {
+        document.getElementById('removeItens').addEventListener('click', function() {
+            // apagar
+            document.getElementsByClassName('box_div_js')[0].remove();  
+
+            document.getElementsByClassName('box_div_js')[0].style.display = 'none'; 
+
+            document.getElementById('removeItens').style.display = 'none'
+        })
     }
 }
 
@@ -97,6 +114,9 @@ document.getElementById('form_finacial')
         current.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
     // checking value 
         const checkingValue = new CheckedValue(current, name, price); 
-        checkingValue.CheckingValueCurrent(checkingValue);   checkingValue.addMoreProduct() 
-        checkingValue.formatDefaultForm()
+        checkingValue.CheckingValueCurrent(checkingValue);   checkingValue.addMoreProduct(); 
+        checkingValue.formatDefaultForm();
+        checkingValue.removeItem() 
+
+        document.getElementById('removeItens').style.display = 'block'
     })
